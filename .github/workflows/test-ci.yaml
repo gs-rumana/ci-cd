@@ -7,5 +7,12 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Print message
-        run: echo "Hello from GitHub Actions"
+      - name: Step 1 — success
+        run: echo "This will pass"
+
+      - name: Step 2 — failure
+        run: ls file_that_does_not_exist
+
+      - name: Step 3 — never runs
+        run: echo "You will not see this"
+
