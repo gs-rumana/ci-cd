@@ -1,0 +1,31 @@
+{
+  "name": "ci-cd",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/gs-rumana/ci-cd#readme",
+  "bugs": {
+    "url": "https://github.com/gs-rumana/ci-cd/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gs-rumana/ci-cd.git"
+  },
+  "license": "MIT",
+  "author": {
+    "email": "gursahb7@gmail.com",
+    "name": "GS Rumana",
+    "url": "https://gs-rumana.com"
+  },
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.2.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
