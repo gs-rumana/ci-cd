@@ -7,12 +7,10 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Step 1 — success
-        run: echo "This will pass"
+      - name: Multiple commands in one step
+        run: |
+          echo "Command 1"
+          echo "Command 2"
+          echo "Command 3"
 
-      - name: Step 2 — failure
-        run: ls file_that_does_not_exist
-
-      - name: Step 3 — never runs
-        run: echo "You will not see this"
 
