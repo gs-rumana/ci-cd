@@ -7,10 +7,16 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Multiple commands in one step
-        run: |
-          echo "Command 1"
-          echo "Command 2"
-          echo "Command 3"
+      - name: Step 1
+        run: cd /
+
+      - name: Step 2
+        run: pwd
+
+      - name: Step 3
+        run: ls
+
+      - name: Step 4
+        run: apt update
 
 
