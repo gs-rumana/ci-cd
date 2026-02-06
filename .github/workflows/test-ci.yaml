@@ -18,8 +18,13 @@ jobs:
       - name: Workflow with variables
         run: echo $WORK
 
-      - name: Step 4
-        run: apt update
+      - name: Secret
+        run: echo "Secret is $SEC"
+        env:
+          API_KEY: ${{ secrets.TOP_SECRET }}
+
+      - name: My version of Secret
+        run: echo ${{secrets.TOP_SECRET}}
     env:
       JOB: ki haal chaal aa dosto
 env:
